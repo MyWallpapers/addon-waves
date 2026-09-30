@@ -1,0 +1,50 @@
+{
+  "runtime": "canvas-v1",
+  "name": "Tide",
+  "description": "Une surface d’eau abstraite, composée de courbes superposées et de reflets contenus.",
+  "version": "0.1.0",
+  "entry": "dist/assets/addon.js",
+  "thumbnail": "assets/thumbnail.png",
+  "deviceSettingsVersion": "1",
+  "ui": {
+    "pointerEvents": "none"
+  },
+  "settings": [
+    {
+      "id": "water",
+      "type": "color",
+      "label": "Eau",
+      "default": "#122b32"
+    },
+    {
+      "id": "light",
+      "type": "color",
+      "label": "Reflets",
+      "default": "#6e979d"
+    },
+    {
+      "id": "amplitude",
+      "type": "range",
+      "label": "Amplitude",
+      "default": 30,
+      "min": 5,
+      "max": 80,
+      "step": 1
+    },
+    {
+      "id": "speed",
+      "type": "range",
+      "label": "Vitesse",
+      "default": 1,
+      "min": 0.1,
+      "max": 3,
+      "step": 0.1
+    },
+    {
+      "id": "motion",
+      "type": "boolean",
+      "label": "Animation",
+      "default": true
+    }
+  ]
+}
